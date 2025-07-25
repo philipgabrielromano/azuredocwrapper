@@ -70,4 +70,6 @@ jobs:
           app-name: 'azuredocwrapper-gw'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C9F809D91465478AADBE31E8821054AC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_194E0E54145D4F00AE1AD93649FB975F }}
+          sku: 'flexconsumption'
+        
