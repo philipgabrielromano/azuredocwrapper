@@ -13,8 +13,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         
         # Initialize client
         client = DocumentAnalysisClient(
-            endpoint="https://openwebui-gw.cognitiveservices.azure.com/",
-            credential=AzureKeyCredential("YOUR_API_KEY")  # Use Key Vault in production!
+            endpoint=os.environ["DOCUMENT_INTELLIGENCE_ENDPOINT"],
+            credential=AzureKeyCredential(os.environ["DOCUMENT_INTELLIGENCE_KEY"])  # Use Key Vault in production!
         )
         
         # Analyze document - using prebuilt-read for general text
