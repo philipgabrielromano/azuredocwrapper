@@ -1,4 +1,5 @@
 import logging
+import os
 import azure.functions as func
 from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
